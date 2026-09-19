@@ -9,3 +9,6 @@ gcc -no-pie Task_4.s print_ram4.c -o task4
 ./task2
 ./task3
 ./task4
+
+#owner
+Kalel Henry
