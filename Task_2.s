@@ -10,9 +10,13 @@ destination:
     #loads the memory address of ram, base address
     #0x50 is the offset
     #%esi hold the ram memory [kinda like a pointer] ex if ram = 256, it would be moving the 256+0x50
+    
     lea ram+0x50, %esi #this is where the starting ram is
 
-    #movl
+    #movl = moving a long, which is 2 bytes, which is 16 bits
+    #alu = arthimatic logic unit, where is performed math in the chip, out put is the accumlator register
+    #accumlator= the register, if it has a in the pointer then it does math
+    #%eax = counter 
     movl $0, %eax # this is where the counter is 
 
     loop_start:
