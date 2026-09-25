@@ -5,6 +5,7 @@
 .globl fill_ram
 
 fill_ram:
+    #movb = moving a byte, which equals to 8 bits
     movb $0xFF, ram+0x50  # memory adress
     movb $0xFF, ram+0x51
     movb $0xFF, ram+0x52
