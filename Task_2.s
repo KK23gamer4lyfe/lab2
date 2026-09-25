@@ -6,9 +6,13 @@
 
 destination:
 
+    #load effective address
+    #loads the memory address of ram, base address
+    #0x50 is the offset
+    #%esi hold the ram memory [kinda like a pointer] ex if ram = 256, it would be moving the 256+0x50
     lea ram+0x50, %esi #this is where the starting ram is
 
-
+    #movl
     movl $0, %eax # this is where the counter is 
 
     loop_start:
